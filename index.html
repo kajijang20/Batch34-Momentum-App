@@ -1,0 +1,80 @@
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Momentum App</title>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="module" defer src="jsfiles/background.js"></script>
+    <script type="module" defer src="jsfiles/greet.js"></script>
+    <script type="module" defer src="jsfiles/timedate.js"></script>
+    <script type="module" defer src="jsfiles/focus.js"></script>
+    <script type="module" defer src="jsfiles/quotes.js"></script>
+    <script type="module" defer src="jsfiles/todo.js"></script>
+  </head>
+
+  <body>
+    <header></header>
+    <div id="nameinput">
+      <div id="un-text"> Hello, what's your name? </div>
+      <form id="un-form">
+        <input title="username" type="text" id="username" autocomplete="off" />
+        <input id="un-submit" type="submit" hidden />
+      </form>
+      <div id="un-error"> Please enter your name. </div>
+    </div>
+
+    <main>
+      <div id="clockcont">
+        <div id="hour"></div>
+        <div id="minute"></div>
+      </div>
+
+      <div id="wkdate"></div>
+      <form id="greeting"></form>
+
+      <div id="focuscont">
+        <div id="focustxt"> What is your main focus for today? </div>
+        <form id="f-frm">
+          <input title="focus" type="text" id="focustxtform" autocomplete="off" />
+          <input id="fsubmit" type="submit" hidden />
+        </form>
+      </div>
+
+      <div id="focuslist">
+        <div id="focuslisttxt"> TODAY </div>
+        <div id="flistcont">
+          <form id="f-list">
+            <input title="focusbox" type="checkbox" name="letter" id="focusbox" />
+          </form>
+          <div id="listtxt"></div>
+          <div id="fmenu"> • • • </div>
+        </div>
+      </div>
+
+      <div id="qerror"> asdasd </div>
+      <div id="quotecont">
+        <div id="wrapper"> asdasd </div>
+        <div id="quotetxt"></div>
+        <div id="addquote"> • • • </div>
+        <div id="qauthor"></div>
+        <form id="aq-form">
+          <input title="qt-input" type="text" id="qt-input" placeholder="Enter Quote" autocomplete="off" />
+          <input title="qa-input" type="text" id="qa-input" placeholder="Author" autocomplete="off" />
+          <input id="qsubmit" type="submit" hidden />
+          <div id="aq-input"> • • • </div>
+        </form>
+      </div>
+
+      <div class="todocont">
+        <div type="button" id="todotxt">To Do List</div>
+        <div class="popuptext" id="myPopup" style="max-height: 300px; max-width: 300px; overflow: auto;">
+          <form id="listdivs"></form>
+          <form id="todoform">
+            <input title="todo" type="text" id="todoinput" autocomplete="off" placeholder="New to do" />
+            <input id="todosubmit" type="submit" hidden />
+          </form>
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
